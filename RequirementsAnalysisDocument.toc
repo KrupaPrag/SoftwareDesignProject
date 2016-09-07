@@ -9,14 +9,20 @@
 \contentsline {section}{\numberline {3}PROPOSED SYSTEM}{4}
 \contentsline {subsection}{\numberline {3.1}Overview}{4}
 \contentsline {subsection}{\numberline {3.2}Functional requirements - "Shall lists"}{5}
-\contentsline {subsection}{\numberline {3.3}Non-functional requirements}{7}
-\contentsline {subsection}{\numberline {3.4}System models}{8}
-\contentsline {subsubsection}{\numberline {3.4.1}Scenario}{8}
-\contentsline {subsubsection}{\numberline {3.4.2}User stories}{9}
-\contentsline {subsubsection}{\numberline {3.4.3}Use cases models}{10}
-\contentsline {subsubsection}{\numberline {3.4.4}Use case diagrams}{15}
-\contentsline {subsubsection}{\numberline {3.4.5}Analysis object model}{19}
-\contentsline {subsubsection}{\numberline {3.4.6}Dynamic model}{19}
-\contentsline {subsubsection}{\numberline {3.4.7}User interface navigational paths and screen mock-ups}{19}
-\contentsline {subsubsection}{\numberline {3.4.8}Operational requirements}{19}
-\contentsline {section}{\numberline {4}Appendix}{19}
+\contentsline {subsection}{\numberline {3.3}Functional requirements specification}{7}
+\contentsline {subsubsection}{\numberline {3.3.1}Stakeholders}{7}
+\contentsline {subsubsection}{\numberline {3.3.2}Actors and Goals}{7}
+\contentsline {subsection}{\numberline {3.4}Non-functional requirements}{8}
+\contentsline {subsection}{\numberline {3.5}On Screen Requirements}{9}
+\contentsline {subsection}{\numberline {3.6}Acceptance Testing}{9}
+\contentsline {subparagraph}{Acceptance Test for Req1}{9}
+\contentsline {subsection}{\numberline {3.7}System models}{11}
+\contentsline {subsubsection}{\numberline {3.7.1}Scenario}{11}
+\contentsline {subsubsection}{\numberline {3.7.2}User stories}{12}
+\contentsline {subsubsection}{\numberline {3.7.3}Use cases models}{13}
+\contentsline {subsubsection}{\numberline {3.7.4}Use case diagrams}{18}
+\contentsline {subsubsection}{\numberline {3.7.5}Analysis object model}{22}
+\contentsline {subsubsection}{\numberline {3.7.6}Dynamic model}{22}
+\contentsline {subsubsection}{\numberline {3.7.7}User interface navigational paths and screen mock-ups}{22}
+\contentsline {subsubsection}{\numberline {3.7.8}Operational requirements}{22}
+\contentsline {section}{\numberline {4}Appendix}{22}

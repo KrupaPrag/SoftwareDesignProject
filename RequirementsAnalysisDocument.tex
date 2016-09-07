@@ -103,6 +103,72 @@ Describes the high-level functionality of the system\\
 3.2.5 FindMeTutor Android application will be able to be utilised on any Android OS of (some version), which is able easily accessible,as many students can download this application for use on their smartphones and/or tablets which shall makes the application easily accessible. 
 \end{comment}
 
+
+
+
+\begin{flushleft}
+\textbf{Overview of Requirements}
+\end{flushleft}
+{
+\centering
+\begin{longtable}{| p{1.5cm} | p{13cm}|  }
+\hline			
+\textbf{Item} & \textbf{Requirements to implement}	
+			
+% Proposal 
+	\\ \hline 0 & Proposal 
+% Student Registration			
+		\\ \hline 1 & Student registration and login \\ \hline 
+			
+%Tutor Registration
+			2 & Tutor registration and login \\ \hline	
+ 
+% System Administrator Registration						
+			3 & Administrator registration  \\ \hline  
+
+			
+% Administrator capabilities
+			4 & Administrator capabilities\\ \hline 
+			
+% Request tutor: student
+			5 & Students able to request a tutor\\ \hline
+
+% Request Tutor: Tutor
+				6 & Tutor able to accept/reject tutor requests\\ \hline
+
+% Add Event: Student 
+				7 & Student able to handle 'Upcoming events'   \\ \hline	
+				
+% Add Event: Tutor 
+				8 & Tutor able to handle 'Upcoming events'  \\ \hline	
+							
+% Rate a tutor: student
+				9 & Student able to rate a tutor \\ \hline
+
+% Check-in/out : Sudent
+				10 & Student able to check-in/check-out of tutor sessions  \\ \hline	
+
+% Safety checker
+				11 & Alert administrator if need for safety warning   \\ \hline	
+
+% Payment
+				12 & Payments \\ \hline	
+
+
+
+	
+\end{longtable}
+}
+
+
+
+
+
+
+\begin{flushleft}
+\textbf{Functional Requirements}
+\end{flushleft}
+
 {
 \centering
 \begin{longtable}{| l | p{10cm}| l |}
@@ -176,6 +242,27 @@ Describes the high-level functionality of the system\\
 \end{longtable}
 }
 
+\subsection{Functional requirements specification}
+%Although this section is entitled “Requirements Specification,” we will see that we
+%are still discovering the functional system requirements for the system-to-be, as
+%well as specifying the discovered requirements.
+\subsubsection{Stakeholders}
+%Identify anyone and everyone who has interest in this system (users, managers, sponsors, etc.).
+%Stakeholders should be humans or human organizations.
+\begin{itemize}
+\item Students
+\item Tutors
+\item University (School of Computer Science and Applied Mathematics)
+\end{itemize}
+\subsubsection{Actors and Goals}
+\begin{itemize}
+\item Students - a registered user looking for a tutor
+\item Tutors - a registered user, whom is approachable to tutor particular subjects
+\item Database - records details of students and tutors. Stores required information with regards to tutorials for student and tutor. 
+\end{itemize}
+
+
+
 \subsection{Non-functional requirements}{
 Describes the user-level requirements that are not directly related to the functionality. \\
 \\\textbf{3.3.1 Usability}\\ 
@@ -197,7 +284,57 @@ Each user's home page will be customized to the particular topics in which they 
 Andoid studio for development\\
 Adobe illustrator and photoshop for App graphics - FindMeTutor logo\\
 %\textbf{3.3.8 Legal}\\
+
 }
+\subsection{On Screen Requirements}
+% TO fill - what we see in the app
+
+\subsection{Acceptance Testing}
+\subparagraph{Acceptance Test for Req1}
+\begin{itemize}
+\item ACT1.01	Ensure working connection between the applcation and it's database (pass: database stores information and app displays required data from database)
+%Student registration
+\item ACT1.01	Challenge registered student to register with taken identifier (fail)
+\item ACT1.01	Challenge new student to register with new identifier (pass)
+\item ACT1.01	Challenge registered student to update their account (pass)
+\item ACT1.01	Challenge registered student to view their account (pass)
+%Tutor registration
+\item ACT1.01	Challenge registered tutor to register (fail)
+\item ACT1.01	Challenge new tutor to register (pass)
+\item ACT1.01	Challenge registered tutor to update their account (pass)
+\item ACT1.01	Challenge registered tutor to view their account (pass)
+%Administrator registration
+\item ACT1.01	Challenge registered administrator to register (fail)
+\item ACT1.01	Challenge new administrator to register (pass)
+\item ACT1.01	Challenge registered administrator to update their account (pass)
+\item ACT1.01	Challenge registered administrator to view their account (pass)
+% Administrator capabilities
+\item ACT1.01	Challenge registered administrator to view a registered student's account (pass)
+\item ACT1.01	Challenge registered administrator to update a registered student's account (pass)
+\item ACT1.01	Challenge registered administrator to mark a registered student's account as deleted (pass)
+\item ACT1.01	Challenge registered administrator to view a registered tutor's account (pass)
+\item ACT1.01	Challenge registered administrator to update a registered tutor's account (pass)
+\item ACT1.01	Challenge registered administrator to mark a registered tutor's account as deleted (pass)
+% Request tutor: student	
+\item ACT1.01	A student requesting a tutor can request a tutor for a date/time already passed  (fail)	
+\item ACT1.01	A student requesting a tutor can request a tutor for a subject that they have not added to their account's personal details  (fail)
+\item ACT1.01	A student requesting a tutor can request tutorials for various topics at a given time. ie. Student can request tutor for subject B while request tutor status for subject A is still pending (pass)	
+\item ACT1.01	A student requesting a tutor can delete a request for a  tutorial, if no longer require it. (fail)
+\item ACT1.01	A student receiving a tutor acceptance notification, can agree to tutorial (pass)
+\item ACT1.01	A student receiving a tutor acceptance notification, can disagree to tutorial . ie . They can decide to no longer want to cintinue with the tutorial, or have selected another tutor who has accepted their request.(pass)			
+% Request Tutor: Tutor
+% Add Event: Student 				
+% Add Event: Tutor 						
+% Rate a tutor: student				
+% Check-in/out : Sudent
+% Safety checker
+% Payment
+
+\item ACT1.01	Challenge registered administrator to register (fail)
+\item ACT1.01	Challenge new administrator to register (pass)
+\end{itemize}
+
+
 \subsection{System models}
 
 \subsubsection{Scenario}
@@ -256,31 +393,37 @@ For instance, there is a student - Joe Soap - who is currently doing his  3rd ye
 \end{longtable}
 }
 \subsubsection{Use cases models}
-\textbf{Use cases}	\\		
-			Create Student					UC-CS
-			\\Update Student 				UC-US
-			\\View Student      			UC-VS
-			\\Archive Student				UC-DS
-			\\Create Tutor					UC-CT
-			\\Update Tutor					UC-UT
-			\\View Tutor					UC-VT
-			\\Archive Tutor					UC-DT
-			\\Create System Administartor	UC-CA
-			\\Update Student 				UC-UA
-			\\View Student      			UC-VA
-			\\Archive Student				UC-DA		
-			\\Request Tutor					UC-RT
-			\\Choose Tutor					UC-CT
-			\\Create Event					UC-CE
-			\\Update Event					UC-UE
-			\\View Event					UC-VE
-			\\Archive Event					UC-DE
-			\\Rate Tutor					UC-R
-			\\Accept Request				UC-AR
-			\\Archive Request				UC-DR
-			\\Check-in						UC-CI
-			\\Check-out						UC-CO
+\begin{flushleft}
+	\textbf{Use cases}
+		\\	
+		\begin{itemize}
+			\item Create Student					UC-CS
+			\\ \item Update Student 				UC-US
+			\\ \item View Student      				UC-VS
+			\\ \item Archive Student				UC-DS
+			\\ \item Create Tutor					UC-CT
+			\\ \item Update Tutor					UC-UT
+			\\ \item View Tutor						UC-VT
+			\\ \item Archive Tutor					UC-DT
+			\\ \item Create System Administartor	UC-CA
+			\\ \item Update Student 				UC-UA
+			\\ \item View Student      				UC-VA
+			\\ \item Archive Student				UC-DA		
+			\\ \item Request Tutor					UC-RT
+			\\ \item Choose Tutor					UC-CT
+			\\ \item Create Event					UC-CE
+			\\ \item Update Event					UC-UE
+			\\ \item View Event						UC-VE
+			\\ \item Archive Event					UC-DE
+			\\ \item Rate Tutor						UC-R
+			\\ \item Accept Request					UC-AR
+			\\ \item Archive Request				UC-DR
+			\\ \item Check-in						UC-CI
+			\\ \item Check-out						UC-CO
+\end{itemize}			
+		
 			
+			\end{flushleft}
 		{
 		\centering
 		
